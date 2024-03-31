@@ -5,15 +5,21 @@ typedef enum{
     ATG,
     GTG,
     TTG,
-    EDGE,
+    START_EDGE,
 } StartCodon;
 
 typedef enum{
     TAA,
     TGA,
     TAG,
-    EDGE
+    STOP_EDGE
 } StopCodon;
+
+struct rbs_motif{
+    char** motifs; //array of  rbs motifs in relation to their spacers
+    int start; //minimum range of space between bases from the start codon and the observed motif.
+    int end; //max range -"-
+} rbs_motif_t;
 
 struct seq{
     int id;
