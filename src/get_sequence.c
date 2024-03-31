@@ -1,4 +1,7 @@
 #include <stdio.h>
+#include "sequence_struct.h"
+/*Currently this only reads in whole files. It needs to filter the input,
+ *It needs get information from the sequence. We need a struct for this.*/
 
 /*Reads in the Genome from a FASTA file.*/
 char* readInSequence(char* fptr, char* seq){
