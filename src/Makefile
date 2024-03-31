@@ -1,6 +1,6 @@
 CC := clang
 
-SRCS := main.c
+SRCS := main.c get_sequence.c
 
 OBJS := $(SRCS:.c=.o)
 
